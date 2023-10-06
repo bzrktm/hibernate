@@ -21,4 +21,12 @@ public class Util {
         }
         return connection;
     }
+
+    public static void getClose(){
+        try {
+            Util.getConnection().close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
