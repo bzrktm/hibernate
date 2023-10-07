@@ -19,6 +19,6 @@ public class Main {
         System.out.println(userServ.getAllUsers());
         userServ.cleanUsersTable();
         userServ.dropUsersTable();
-        Util.getClose();
+        Util.getSessionClosed();
     }
 }
